@@ -1,51 +1,28 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Startup</title>
+<head>
+	<title>JavaScript + DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>JavaScript in HTML</h1>
+	<h2>Shopping list</h2>
+	<p id="first">Get it Done today!</p>
+	<p class="second">No excuses</p>
+	<!-- This will be added to the shopping list -->
+	<p>Please add items to your shopping list<br><input id="userinput" type="text" name="enter items">
+	<button id="enter">Enter</button> </p><!-- Use ID since there is only one of them instead of class -->
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<ul>
+		<li class="bold red" random="23">Notebook <button class="delete">Delete</button></li>
+		<li>Jello <button class="delete">Delete</button> </li>
+		<li>Spinach <button class="delete">Delete</button> </li>
+		<li>Rice <button class="delete">Delete</button> </li>
+		<li>Brithday cake <button class="delete">Delete</button> </li>
+		<li>Candles <button class="delete">Delete</button> </li>
+	</ul>
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-      <header class="startup text-center text-white d-flex">
-        <div class="container my-auto">
-          <div class="row">
-            <div class="col-lg-12 my-auto">
-              <h1 class="text-uppercase faded">
-                <strong>the biggest startup event of the year</strong>
-                <hr>
-              </h1>
-            </div>
-
-            <div class="col-lg-12 my-auto">
-              <!-- Begin Mailchimp Signup Form -->
-              <style type="text/css">
-                #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
-                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-              </style>
-              <div id="mc_embed_signup">
-              <form action="https://gmail.us20.list-manage.com/subscribe/post?u=cc37e816a382cd5178a0e03b9&amp;id=49a164a39c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cc37e816a382cd5178a0e03b9_49a164a39c" tabindex="-1" value=""></div>
-                  <div class="clear"><input class="btn btn-primary btn-xl" type="submit" value="Find Out More" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                  </div>
-              </form>
-              </div>
-              <!--End mc_embed_signup-->
-          </div>
-
-          </div>
-        </div>
-      </header>
-
-  </body>
+	<!-- How to insert a javascript file into html -->
+	<script type="text/javascript" src="shoppingList.js"></script>
+</body>
 </html>
