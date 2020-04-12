@@ -14,7 +14,7 @@ var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var li = document.querySelectorAll("li");
 var delbutton = document.getElementsByClassName("delete");
-
+var clearbutton = document.getElementById("clearlist");
 //Functions
 function inputLength() { //This can be needed in the future
 	return input.value.length;
@@ -58,6 +58,10 @@ function DeleteElementList(event) {
     }
 }
 
+function clearList() {
+	ul.innerHTML = "";
+}
+
 //Imporrtant not to use the () after the function becuase it is a call back function
 
 button.addEventListener("click", addListAfterClick);
@@ -67,3 +71,5 @@ input.addEventListener("keypress", addListAfterKeypress); //using thr word event
 ul.addEventListener("click", strikeThrough);
 
 ul.addEventListener("click", DeleteElementList);
+
+clearbutton.addEventListener("click",clearList);
